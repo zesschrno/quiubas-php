@@ -1,0 +1,29 @@
+{
+    "name": "quiubas/quiubas-php",
+    "description": "Quiubas PHP Library for REST API",
+    "type": "library",
+    "keywords": ["quiubas-php","sms"],
+    "homepage": "https://github.com/quiubas/quiubas-php",
+    "license": "MIT",
+    "support": {
+        "source": "https://github.com/quiubas/quiubas-php",
+        "issues": "https://github.com/quiubas/quiubas-php/issues"
+    },
+    "require": {
+        "php": ">=5.3.3",
+        "ext-openssl": "*",
+        "ext-curl": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0"
+    },
+    "authors": [
+        {
+            "name": "Jorge Trujillo",
+            "email": "z@zo0r.me"
+        }
+    ],
+    "autoload": {
+        "files": [ "quiubas.php" ]
+    }
+}
