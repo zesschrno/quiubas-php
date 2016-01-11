@@ -18,7 +18,7 @@ class Quiubas {
 	/**
 	 * @param string Library Version
 	 */
-	public static $lib_version = '1.0.1';
+	public static $lib_version = '1.0.2';
 
 	// @var string The Quiubas API key to be used for requests.
 	public static $api_key;
@@ -81,7 +81,6 @@ class Quiubas {
 	public static function setBaseURL( $base_url ) {
 		self::$base_url = $base_url;
 	}
-
 
 	/**
 	 * @param string $version The API version to use for requests.

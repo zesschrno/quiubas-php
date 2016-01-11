@@ -24,7 +24,6 @@ class Network {
 	 * @param array Message parameters
 	 */
 	public static function request( $path, $params = false, $method = 'GET', $curl_options = array() ) {
-
 		if ( gettype( $path ) === 'array' ) {
 			$path = \Quiubas\Quiubas::format( array_shift( $path ), array_pop( $path ) );
 		}
@@ -74,7 +73,7 @@ class Network {
 		curl_setopt( $ch, CURLOPT_CONNECTTIMEOUT, 20 );
 		curl_setopt( $ch, CURLOPT_TIMEOUT, 20 );
 		curl_setopt( $ch, CURLOPT_SSLVERSION, 1 ) ;
-		curl_setopt( $ch, CURLOPT_USERAGENT, 'Quiubas/' . \Quiubas\Quiubas::$lib_version );
+		curl_setopt( $ch, CURLOPT_USERAGENT, 'Quiubas-PHP/' . \Quiubas\Quiubas::$lib_version );
 
 		curl_setopt_array( $ch, $curl_options );
 

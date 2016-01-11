@@ -25,7 +25,7 @@ class SMS extends Base {
 	 * @param array $params Parameters
 	 */
 	public static function getResponses( $id, $params = array() ) {
-		return \Quiubas\Network::get( array( static::$action . '/responses', [ 'id' => $id ] ), $params );
+		return \Quiubas\Network::get( array( static::$action . '/responses', array( 'id' => $id ) ), $params );
 	}
 }
 

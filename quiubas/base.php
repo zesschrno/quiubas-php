@@ -13,24 +13,24 @@ class Base {
 	/**
 	 * @param string $id ID
 	 */
-	public static function get( $id ) {
-		return \Quiubas\Network::get( array( static::$action, [ 'id' => $id ] ) );
+	public static function get( $id = false, $params = array() ) {
+		return \Quiubas\Network::get( array( static::$action, array( 'id' => $id ) ), $params );
 	}
 
 	/**
 	 * @param string $id ID
 	 * @param array $params Parameters
 	 */
-	public static function delete( $id, $params = array() ) {
-		return \Quiubas\Network::delete( array( static::$action, [ 'id' => $id ] ), $params );
+	public static function delete( $id = false, $params = array() ) {
+		return \Quiubas\Network::delete( array( static::$action, array( 'id' => $id ) ), $params );
 	}
 
 	/**
 	 * @param string $id ID
 	 * @param array $params Parameters
 	 */
-	public static function update( $id, $params = array() ) {
-		return \Quiubas\Network::put( array( static::$action, [ 'id' => $id ] ), $params );
+	public static function update( $id = false, $params = array() ) {
+		return \Quiubas\Network::put( array( static::$action, array( 'id' => $id ) ), $params );
 	}
 
 	/**
