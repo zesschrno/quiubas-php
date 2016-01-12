@@ -1,24 +1,35 @@
 # Quiubas PHP Library
 
+## Requirements
+- PHP 5.3+
+- `openssl` extension
+- `curl` extension
+
 ## Installation
 
 Install **quiubas-php** via composer or by downloading the source.
 
-#### Via Composer:
+## Via Composer
 
-**quiubas-php** is available on Packagist as the
-[`quiubas/quiubas-php`](http://packagist.org/packages/quiubas/quiubas-php) package.
+You can install the bindings via [Composer](http://getcomposer.org/) [`quiubas/quiubas-php`](http://packagist.org/packages/quiubas/quiubas-php). Run the following command:
 
-#### Via ZIP file:
+```bash
+composer require quiubas/quiubas-php
+```
 
-[Click here to download the source
-(.zip)](https://github.com/quiubas/quiubas-php/zipball/master) which includes all
-dependencies.
+To use the library, use Composer's [autoload](https://getcomposer.org/doc/00-intro.md#autoloading):
 
-Move the quiubas-php folder to your project directory and then include the library file:
+```php
+require_once('vendor/autoload.php');
+```
 
-    require_once '/path/to/quiubas-php/quiubas.php';
+## Manual Installation
 
+If you do not wish to use Composer, you can download the [latest release](https://github.com/quiubas/quiubas-php/zipball/master). Then, to use the library, include the `quiubas.php` file.
+
+```php
+require_once('/path/to/quiubas-php/quiubas.php');
+```
 
 ## Quickstart
 
@@ -31,7 +42,7 @@ Move the quiubas-php folder to your project directory and then include the libra
 require_once '/path/to/quiubas-php/quiubas.php';
 
 \Quiubas\Quiubas::setAuth( 'api_key', 'api_secret' );
-
+s
 $response = \Quiubas\SMS::send(array(
   'to_number' => '+52552512421',
   'message' => 'Hello there',
@@ -39,9 +50,3 @@ $response = \Quiubas\SMS::send(array(
 
 echo $response->sms_id;
 ```
-
-
-## Requirements
-- PHP 5.3+
-- `openssl` extension
-- `curl` extension
