@@ -1,6 +1,12 @@
 Quiubas Changelog
 ====================
 
+Version 1.0.3
+-------------
+Released January 12, 2015
+
+- Fallback for get/update/action `params`
+
 Version 1.0.2
 -------------
 Released January 11, 2015
