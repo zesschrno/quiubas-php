@@ -17,7 +17,7 @@ dependencies.
 
 Move the quiubas-php folder to your project directory and then include the library file:
 
-    require '/path/to/quiubas-php/quiubas.php';
+    require_once '/path/to/quiubas-php/quiubas.php';
 
 
 ## Quickstart
