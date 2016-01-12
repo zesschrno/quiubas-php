@@ -41,7 +41,7 @@ require_once('/path/to/quiubas-php/quiubas.php');
 // Load the library
 require_once '/path/to/quiubas-php/quiubas.php';
 
-\Quiubas\Quiubas::setAuth( 'api_key', 'api_secret' );
+\Quiubas\Quiubas::setAuth( 'api_key', 'api_private' );
 s
 $response = \Quiubas\SMS::send(array(
   'to_number' => '+52552512421',
