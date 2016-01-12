@@ -28,7 +28,7 @@ Move the quiubas-php folder to your project directory and then include the libra
 <?php
 // Install the library via Composer or download the .zip file to your project folder.
 // Load the library
-require('/path/to/quiubas-php/quiubas.php');
+require_once '/path/to/quiubas-php/quiubas.php';
 
 \Quiubas\Quiubas::setAuth( 'api_key', 'api_secret' );
 
