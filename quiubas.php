@@ -7,7 +7,8 @@ if ( defined( 'QUIUBAS_BASE_PATH' ) === false ) {
 }
 
 spl_autoload_register(function($class) {
-	$class = strtolower(str_replace('\\', '/', $class));
-	require_once QUIUBAS_BASE_PATH . $class . '.php';
-});
-
+	$class = QUIUBAS_BASE_PATH . strtolower(str_replace('\\', '/', $class)) . '.php';
+	if ( file_exists($class) === true ) {
+		require_once $class;
+	}
+}, false, true);
