@@ -17,7 +17,7 @@ class MNP extends Base {
 	 * @param string $number
 	 * @param array $params Parameters
 	 */
-	public static function getResponses( $number, $params = array() ) {
+	public static function getData( $number, $params = array() ) {
 		return \Quiubas\Network::get( array( static::$action, array( 'number' => $number ) ), $params );
 	}
 }
