@@ -18,7 +18,7 @@ class Quiubas {
 	/**
 	 * @param string Library Version
 	 */
-	public static $lib_version = '1.0.3';
+	public static $lib_version = '1.2.0';
 
 	// @var string The Quiubas API key to be used for requests.
 	public static $api_key;
@@ -27,10 +27,8 @@ class Quiubas {
 	public static $api_private;
 
 	// @var string The base URL for the Quiubas API.
-	public static $base_url = 'https://rest.quiubas.com';
+	public static $base_url = 'https://api.quiubas.com';
 
-	// @var string The version of the Quiubas API to use for requests.
-	public static $version = '1.0';
 
 	// @var string Object Response
 	public static $object_response = true;
@@ -57,15 +55,8 @@ class Quiubas {
 	/**
 	 * @return string The API version used for requests.
 	 */
-	public static function getVersion() {
-		return self::$version;
-	}
-
-	/**
-	 * @param string $version The API version to use for requests.
-	 */
-	public static function setVersion( $version ) {
-		self::$version = $version;
+	public static function getLibVersion() {
+		return self::$lib_version;
 	}
 
 	/**

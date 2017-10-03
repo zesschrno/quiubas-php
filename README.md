@@ -20,7 +20,7 @@ composer require quiubas/quiubas-php
 To use the library, use Composer's [autoload](https://getcomposer.org/doc/00-intro.md#autoloading):
 
 ```php
-require_once('vendor/autoload.php');
+require_once 'vendor/autoload.php';
 ```
 
 ## Manual Installation
@@ -28,7 +28,7 @@ require_once('vendor/autoload.php');
 If you do not wish to use Composer, you can download the [latest release](https://github.com/quiubas/quiubas-php/zipball/master). Then, to use the library, include the `quiubas.php` file.
 
 ```php
-require_once('/path/to/quiubas-php/quiubas.php');
+require_once '/path/to/quiubas-php/quiubas.php';
 ```
 
 ## Quickstart

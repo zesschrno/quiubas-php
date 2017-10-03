@@ -137,7 +137,7 @@ class Network {
 	 * @return string Base URL
 	 */
 	public static function getBaseURL() {
-		return ( \Quiubas\Quiubas::getBaseURL() . '/' .	\Quiubas\Quiubas::$version . '/' );
+		return ( \Quiubas\Quiubas::getBaseURL() . '/' );
 	}
 
 	/**
