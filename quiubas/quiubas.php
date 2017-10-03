@@ -2,18 +2,6 @@
 
 namespace Quiubas;
 
-$required_extensions = array(
-	'openssl',
-	'curl'
-);
-
-foreach ( $required_extensions as $v ) {
-	if ( extension_loaded( $v ) === false ) {
-		throw new \Quiubas\Exception( 'The "' . $v . '" extension is required by Quiubas Library' );
-		break;
-	}
-}
-
 class Quiubas {
 	/**
 	 * @param string Library Version
