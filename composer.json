@@ -19,14 +19,13 @@
     },
     "authors": [
         {
-            "name": "Jorge Trujillo",
-            "email": "z@zo0r.me"
+            "name": "Quiubas Team",
+            "email": "augusto@quiubas.com"
         }
     ],
     "autoload": {
-        "files": [ "quiubas.php" ],
-		 "psr-4": {
-            "Quiubas\\": "quiubas/"
+		"psr-4": {
+            "Quiubas\\": "Quiubas/"
         }
 
     }
