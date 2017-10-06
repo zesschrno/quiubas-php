@@ -24,6 +24,9 @@ class Network {
 	 * @param array Message parameters
 	 */
 	public static function request( $path, $params = false, $method = 'GET', $curl_options = array() ) {
+		
+		$params = json_encode($params);
+		
 		if ( gettype( $path ) === 'array' ) {
 			$path = \Quiubas\Quiubas::format( array_shift( $path ), array_pop( $path ) );
 		}
@@ -62,6 +65,7 @@ class Network {
 
 		$auth = \Quiubas\Quiubas::getAuth();
 		curl_setopt( $ch, CURLOPT_USERPWD, $auth['api_key'] . ':' . $auth['api_private'] );
+		curl_setopt( $ch, CURLOPT_HTTPHEADER, array('Content-Type:application/json'));
 		curl_setopt( $ch, CURLOPT_AUTOREFERER, true );
 		curl_setopt( $ch, CURLOPT_HEADER, 0 );
 		curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1 );
