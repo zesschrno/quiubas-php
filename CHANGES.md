@@ -1,6 +1,12 @@
 Quiubas Changelog
 ====================
 
+Version 1.2.0
+-------------
+Released October 6, 2017
+
+- Updated code to work with API v2
+
 Version 1.0.3
 -------------
 Released January 12, 2015
