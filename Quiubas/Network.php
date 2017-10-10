@@ -124,7 +124,11 @@ class Network {
 			}
 
 			if ( $error_msg !== false ) {
-				throw new \Quiubas\Exception( $error_msg );
+				if ( !is_string($error_msg) ) {
+					throw new \Quiubas\Exception("Not parseable error");
+				} else {
+					throw new \Quiubas\Exception( $error_msg );
+				}
 			} else {
 				if ( \Quiubas\Quiubas::getObjectResponse() === true ) {
 					return (object) $response;
