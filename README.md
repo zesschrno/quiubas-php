@@ -27,7 +27,7 @@ require_once '/path/to/quiubas-php/Quiubas.php';
 
 \Quiubas\Quiubas::setAuth( 'api_key', 'api_private' );
 
-$response = \Quiubas\SMS::send(array(
+$response = \Quiubas\Sms::send(array(
   'to_number' => '+52552512421',
   'message' => 'Hello there',
 ));
