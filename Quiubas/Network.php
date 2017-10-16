@@ -93,52 +93,7 @@ class Network {
 
 		$response = json_decode( $data, true );
 
-		if ( json_last_error() === JSON_ERROR_NONE ) {
-			$error_msg = false;
-
-			if ( isset( $response['error'] ) === true && $response['error'] !== false ) {
-
-				if ( isset( $response['errors'] ) === true ) {
-					$error_msg = array();
-
-					foreach ( $response['errors'] as $v ) {
-						$error_msg[] = $v['message'];
-					}
-
-					$error_msg = implode( "\r\n", $error_msg );
-				} else {
-					$error_msg = $response['error'];
-				}
-			}
-
-			unset( $response['action'], $response['error'], $response['__debug'] );
-
-			if ( isset( $response['items'] ) === true ) {
-				$response = $response['items'];
-
-				if ( \Quiubas\Quiubas::getObjectResponse() === true ) {
-					foreach( $response as $k => $v ) {
-						$response[$k] = (object) $v;
-					}
-				}
-			}
-
-			if ( $error_msg !== false ) {
-				if ( !is_string($error_msg) ) {
-					throw new \Quiubas\Exception("Not parseable error");
-				} else {
-					throw new \Quiubas\Exception( $error_msg );
-				}
-			} else {
-				if ( \Quiubas\Quiubas::getObjectResponse() === true ) {
-					return (object) $response;
-				} else {
-					return $response;
-				}
-			}
-		} else {
-			throw new \Quiubas\Exception( sprintf( 'There was an error parsing the response: #%d %s', json_last_error(), json_last_error_msg() ) );
-		}
+		return $response;
 	}
 
 	/**

@@ -5,6 +5,8 @@
 - `openssl` extension
 - `curl` extension
 
+## Current version 1.2.5
+
 ## Installation
 
 Install **quiubas-php** by downloading the source.
