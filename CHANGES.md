@@ -1,6 +1,10 @@
 Quiubas Changelog
 ====================
 
+Version 1.3.0
+-------------
+Remove unusued code
+
 Version 1.2.5
 -------------
 Changed the response to forced response. Hope this fix the SrPago issues.

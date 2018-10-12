@@ -5,7 +5,7 @@
 - `openssl` extension
 - `curl` extension
 
-## Current version 1.2.5
+## Current version 1.3.0
 
 ## Installation
 

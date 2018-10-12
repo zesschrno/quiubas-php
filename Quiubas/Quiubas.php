@@ -6,7 +6,7 @@ class Quiubas {
 	/**
 	 * @param string Library Version
 	 */
-	public static $lib_version = '1.2.5';
+	public static $lib_version = '1.3.0';
 
 	// @var string The Quiubas API key to be used for requests.
 	public static $api_key;
