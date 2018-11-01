@@ -1,6 +1,10 @@
 Quiubas Changelog
 ====================
 
+Version 1.3.1
+-------------
+Recover MNP support
+
 Version 1.3.0
 -------------
 Remove unusued code
