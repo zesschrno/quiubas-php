@@ -13,13 +13,27 @@ class Base {
 	/**
 	 * @param string $id ID
 	 */
-	public static function get( $id = false, $params = array() ) {
-		if ( gettype( $id ) === 'array' ) {
-			$params = $id;
-			$id = false;
+	public static function get($params = false ) {
+        $backtrace=debug_backtrace();
+		if($backtrace[1]['function']=="getResponses") {
+			$path=static::$actionResponses;
+		} else {
+			$path=static::$action;
+		}
+		if ( gettype( $params ) === 'array' ) {
+			if (array_key_exists('id', $params)) {
+				$id=$params['id'];
+				$prepared_params=(array( $path, array('id'=>$id)));
+			} else {				
+				print_r("Provide an ID in array");
+				exit();
+			}
+		} else {
+			$prepared_params=(array( $path, array('id'=>false)));
 		}
 
-		return \Quiubas\Network::get( array( static::$action, array( 'id' => $id ) ), $params );
+		
+		return \Quiubas\Network::get($prepared_params);
 	}
 
 	/**
