@@ -1,6 +1,4 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
 // Install the library by downloading the .zip file to your project folder.
 // Load the library
 require_once 'Quiubas.php';
