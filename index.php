@@ -3,7 +3,7 @@
 // Load the library
 require_once 'Quiubas.php';
 
-\Quiubas\Quiubas::setAuth( '90d09e4d96b96c034eb99454562d7c6298d5846a', '346994780692eb152f73de68723029cdcc687cf7' );
+\Quiubas\Quiubas::setAuth( 'API_KEY', 'API_PRIVATE' );
 
 
 
