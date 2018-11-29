@@ -1,7 +1,7 @@
 # Quiubas PHP Library
 
 ## Requirements
-- PHP 5.3+
+- PHP 5.6+
 - `openssl` extension
 - `curl` extension
 
