@@ -41,16 +41,15 @@ $response = \Quiubas\SMS::get(array(
   'id' => 'sms_id'
   ));
 
- $response = \Quiubas\SMS::getAll();
+$response = \Quiubas\SMS::getAll();
 
-
- $response = \Quiubas\SMS::getResponses(array(
+$response = \Quiubas\SMS::getResponses(array(
    'id' => 'sms_id'
-   ));
+));
 
 
- $response = \Quiubas\MNP::getData(array(
+$response = \Quiubas\MNP::getData(array(
    'number' => 'phone_number'
-   ));
+));
 
 ```
