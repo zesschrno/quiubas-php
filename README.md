@@ -27,12 +27,30 @@ require_once '/path/to/quiubas-php/Quiubas.php';
 // Load the library
 require_once '/path/to/quiubas-php/Quiubas.php';
 
+//Get your keys from user dashboard
 \Quiubas\Quiubas::setAuth( 'api_key', 'api_private' );
 
 $response = \Quiubas\Sms::send(array(
-  'to_number' => '+52552512421',
+  'to_number' => 'phone_number',
   'message' => 'Hello there',
 ));
 
-echo $response->id;
+echo $response['id'];
+
+$response = \Quiubas\SMS::get(array(
+  'id' => 'sms_id'
+  ));
+
+ $response = \Quiubas\SMS::getAll();
+
+
+ $response = \Quiubas\SMS::getResponses(array(
+   'id' => 'sms_id'
+   ));
+
+
+ $response = \Quiubas\MNP::getData(array(
+   'number' => 'phone_number'
+   ));
+
 ```

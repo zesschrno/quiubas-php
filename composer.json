@@ -10,7 +10,7 @@
         "issues": "https://github.com/quiubas/quiubas-php/issues"
     },
     "require": {
-        "php": ">=5.3.3",
+        "php": ">=7.1.19",
         "lib-openssl": "*",
         "lib-curl": "*"
     },
