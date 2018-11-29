@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: ivanjezdovic
- * Date: 2018-11-29
- * Time: 14:07
- */
 
 namespace Quiubas;
 require_once 'Quiubas.php';
