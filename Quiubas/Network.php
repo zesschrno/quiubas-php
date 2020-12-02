@@ -76,7 +76,7 @@ class Network {
 		curl_setopt( $ch, CURLOPT_MAXREDIRS, 10 );
 		curl_setopt( $ch, CURLOPT_CONNECTTIMEOUT, 20 );
 		curl_setopt( $ch, CURLOPT_TIMEOUT, 20 );
-		curl_setopt( $ch, CURLOPT_SSLVERSION, 1 ) ;
+		curl_setopt( $ch, CURLOPT_SSLVERSION, 6 ) ;
 		curl_setopt( $ch, CURLOPT_USERAGENT, 'Quiubas-PHP/' . \Quiubas\Quiubas::$lib_version );
 
 		curl_setopt_array( $ch, $curl_options );

@@ -34,5 +34,5 @@ $response = \Quiubas\Sms::send(array(
   'message' => 'Hello there',
 ));
 
-echo $response->id;
+echo $response['id'];
 ```
