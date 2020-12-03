@@ -1,6 +1,10 @@
 Quiubas Changelog
 ====================
 
+Version 1.3.2
+-------------
+TLS1.2
+
 Version 1.3.1
 -------------
 Recover MNP support
