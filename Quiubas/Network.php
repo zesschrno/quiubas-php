@@ -25,7 +25,9 @@ class Network {
 	 */
 	public static function request( $path, $params = false, $method = 'GET', $curl_options = array() ) {
 		
-		$params = json_encode($params);
+		if ($method !== 'GET') {
+      $params = json_encode($params);
+    }
 		
 		if ( gettype( $path ) === 'array' ) {
 			$path = \Quiubas\Quiubas::format( array_shift( $path ), array_pop( $path ) );
